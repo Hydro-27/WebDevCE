@@ -1023,3 +1023,52 @@ header, nav, main, footer {
     max-width: 70% !important;
     height: auto !important;
 }
+
+
+
+
+/* Table Styling */
+.hydro-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Minecraft', sans-serif;
+}
+
+.hydro-table thead {
+    background-color: #023047;
+    color: white;
+}
+
+.hydro-table th, .hydro-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Zebra Striping (Requirement) */
+.hydro-table tbody tr:nth-child(even) {
+    background-color: rgba(2, 48, 71, 0.1);
+}
+
+/* Hover State (Requirement) */
+.hydro-table tbody tr:hover {
+    background-color: #8ecae6;
+    color: #023047;
+}
+
+/* Video & Map Responsive (Requirement: 100% width) */
+.video-container iframe, 
+.map-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    border: 3px solid #023047;
+}
+
+.audio-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+
+
