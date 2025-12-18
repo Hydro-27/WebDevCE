@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Hydroverse</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        
+        <img id="main-title" src="/CustomWebsite/Images/Hydro Logo.png" alt="Hydroverse-title">
+    </header>
+<hr>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/realm.html">Realm</a></li>
+            <li><a href="/members.html">Members</a></li>
+            <li><a href="/lore.html">Lore</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="06form/join.html" class="active">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="hero">
+            <h1 class="page-title">Join the Realm</h1>
+        </header>
+
+        <form action="thanks.html" method="get" class="join-form">
+            <fieldset>
+                <legend>Player Identity</legend>
+                <label>Minecraft Username: 
+                    <input type="text" name="username" required placeholder="Steve">
+                </label>
+                <label>Email Address: 
+                    <input type="email" name="user-email" required placeholder="steve@overworld.com">
+                </label>
+                <label>Phone Number: 
+                    <input type="tel" name="phone" placeholder="555-555-5555">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Playstyle</legend>
+                <p>Preferred Playstyle:</p>
+                <label><input type="radio" name="style" value="builder" checked> Builder</label>
+                <label><input type="radio" name="style" value="fighter"> Fighter</label>
+                <label><input type="radio" name="style" value="redstone"> Redstoner</label>
+
+                <p>What are you looking for? (Pick at least 1)</p>
+                <label><input type="checkbox" name="interest" value="survival"> Survival</label>
+                <label><input type="checkbox" name="interest" value="creative"> Creative</label>
+                <label><input type="checkbox" name="interest" value="pvp"> PVP</label>
+
+                <label>Choose your Faction:
+                    <select name="faction" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="water">Hydroverse Force</option>
+                        <option value="nether">Dark Knights</option>
+                        <option value="ender">Overlords</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tell us more</legend>
+                <label>Why do you want to join Hydroverse?
+                    <textarea name="bio" rows="4" placeholder="I love building water temples..."></textarea>
+                </label>
+            </fieldset>
+
+            <button type="submit" class="submit-btn">Send Application</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <address>Hydroverse HQ • The Overworld • <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></address>
+        <p>&copy; 2025 Hydroverse</p>
+    </footer>
+</body>
+</html>
