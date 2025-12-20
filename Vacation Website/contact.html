@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Vacations | Contact Us</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <h1>Budget Vacations</h1>
+    <p>Affordable trips. Real experiences. No stress.</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Destinations</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="content-card">
+      <h2>Request More Information</h2>
+      <p>
+        Please complete the form below and one of our travel specialists will
+        contact you with additional details. Fields marked as required must
+        be completed before submitting.
+      </p>
+    </section>
+
+    <section class="content-card">
+
+      <form action="thanks.html" method="get">
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <p class="form-note">Tell us how to reach you.</p>
+
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </fieldset>
+
+        <fieldset>
+          <legend>Travel Preferences</legend>
+
+          <p class="form-note">Select your destination interest.</p>
+
+          <label for="destination">Preferred Destination *</label>
+          <select id="destination" name="destination" required>
+            <option value="">-- Please choose one --</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="orlando">Orlando, Florida</option>
+            <option value="california">Southern California</option>
+            <option value="vegas">Las Vegas</option>
+            <option value="nyc">New York City</option>
+          </select>
+
+          <p class="form-note">What type of trip are you interested in?</p>
+
+          <label>
+            <input type="radio" name="tripType" value="family" required>
+            Family Vacation
+          </label>
+
+          <label>
+            <input type="radio" name="tripType" value="romantic">
+            Romantic Getaway
+          </label>
+
+          <label>
+            <input type="radio" name="tripType" value="adventure">
+            Adventure Trip
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Comments</legend>
+
+          <p class="form-note">Tell us anything else we should know.</p>
+
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" rows="5"></textarea>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Budget Vacations. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
